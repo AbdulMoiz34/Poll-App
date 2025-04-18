@@ -11,12 +11,13 @@ button.addEventListener("click", function (event) {
 
     let user = {
         email: email,
-        password: password
+        password: password,
+        userId: Date.now()
     };
 
     arry.push(user);
     localStorage.setItem("users", JSON.stringify(arry));
     window.location.href = "../loginpage.html";
     alert("Signup successful!");
-    
+
 });
